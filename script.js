@@ -112,5 +112,14 @@ function getGender() {
 
       break;
 
+    default:
+  }
+}
+
+function getName() {
+  dayOfWeek = computeDay();
+  getGender();
+}
+
   
 

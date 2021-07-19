@@ -55,14 +55,33 @@ function getGender() {
   var genders = document.getElementsByName("gender");
   if (genders[0].checked === true) {
     var gender = "male";
-  }
-
-  else if (genders[1].checked === true) {
+  } else if (genders[1].checked === true) {
     var gender = "female";
-  }
-
-  else {
+  } else {
     return false;
   }
 
-  
+  switch (gender) {
+    case "male":
+      if (dayOfWeek === 1) {
+        window.alert("Your Akan name is " + maleAkan[0] + "!");
+      }
+      if (dayOfWeek === 2) {
+        window.alert("Your Akan name is " + maleAkan[1] + "!");
+      }
+      if (dayOfWeek === 3) {
+        window.alert("Your Akan name is " + maleAkan[2] + "!");
+      }
+      if (dayOfWeek === 4) {
+        window.alert("Your Akan name is " + maleAkan[3] + "!");
+      }
+      if (dayOfWeek === 5) {
+        window.alert("Your Akan name is " + maleAkan[4] + "!");
+      }
+      if (dayOfWeek === 6) {
+        window.alert("Your Akan name is " + maleAkan[5] + "!");
+      }
+      if (dayOfWeek === 7) {
+        window.alert("Your Akan name is " + maleAkan[6] + "!");
+      }
+

@@ -29,15 +29,18 @@ body {
   padding-top: 10rem;
   padding-bottom: 10rem;
 }
- 
 
-.circle1,.circle3 {
-  height: 3rem;
-  width: 3rem;
-  background: #f2bb13;
-  border-radius: 50%;
+.visuals {
+  position: relative;
+  display: flex;
+  float: right;
 }
 
+.african {
+  position: absolute;
+  bottom: -1rem;
+  right: 50rem;
+}
 
 
 

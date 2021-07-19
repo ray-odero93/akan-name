@@ -5,40 +5,79 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Akan-Name Website</title>
+    <link rel="stylesheet" href="./Assets/css/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./style.css" type="text/css" />
   </head>
   <body>
-    <main>
-      <h1>Akan Name</h1>
+    
+      <div class="intro">
+        <h1>Akan Name</h1>
       <p>
         According to Ghanian culture, chidlren are given their first names as a
         'day name' which corresponds to the day in the week they were born.<br />This
         site will help you know your Akan name based on your date of birth and
         gender!
       </p>
-      <form>
-        <div>
-          <label for="date">Date Of Birth</label>
-        <input type="date" name="date" id="date" required>
-        </div>
-        <div>
-          Gender
-          <div>
-            <label for="male">Male</label>
-            <input type="radio" name="gender" id="male">
-          </div>
-          <div>
-            <label for="female">Female</label>
-            <input type="radio" name="gender" id="female">
-          </div>
-        </div>
-        <button type="submit">Submit</button>
-      </form>
-    </main>
+      </div>
+      
 
-    <div class="african-mask"></div>
-    <div class="circle1"></div>
-    <div class="circle2"></div>
-    <div class="circle3"></div>
-    <div class="circle4"></div>
+      <div class="container">
+        <form action="#" onsubmit="deriveAkanName()">
+          <div class="col-md-4">
+            <label>Date:</label>
+            <input
+              class="form-control"
+              type="number"
+              min="1"
+              max="31"
+              name="day"
+              placeholder="Day of birth"
+              required
+            />
+            <label>Month:</label>
+            <input
+              class="form-control"
+              type="number"
+              min="1"
+              max="12"
+              name="month"
+              placeholder="Month of birth"
+              required
+            />
+            <label>Year:</label>
+            <input
+              class="form-control"
+              type="number"
+              min="1921"
+              max="2021"
+              name="year"
+              placeholder="Year of birth"
+              required
+            />
+            <label>Select Gender:</label>
+            <select class="form-control" id="gender" name="gender">
+              <option disabled selected>Gender</option>
+              <option>Male</option>
+              <option>Female</option>
+            </select>
+            <button class="btn btn-block btn-outline-dark" type="submit">
+              Submit
+            </button>
+        </form>
+      </div>
+    
+
+    <div class="visuals">
+      <div class="african-mask">
+      <img src="" alt="african-mask" />
+      </div>
+      <div class="circle1"></div>
+      <div class="circle2"></div>
+      <div class="circle3"></div>
+      <div class="circle4"></div>
+    </div>
+
+    <script src="./script.js"></script>
+    <script src="./Assets/css/js/bootstrap.js"></script>
   </body>
 </html>

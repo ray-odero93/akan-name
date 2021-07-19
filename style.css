@@ -20,6 +20,25 @@ body {
   width: 10rem;
 }
 
+.intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+}
+ 
+
+.circle1,.circle3 {
+  height: 3rem;
+  width: 3rem;
+  background: #f2bb13;
+  border-radius: 50%;
+}
+
+
 
 
 

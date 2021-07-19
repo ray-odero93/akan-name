@@ -85,3 +85,32 @@ function getGender() {
         window.alert("Your Akan name is " + maleAkan[6] + "!");
       }
 
+      break;
+
+    case "female":
+      if (dayOfWeek === 1) {
+        window.alert("Your Akan name is " + femaleAkan[0] + "!");
+      }
+      if (dayOfWeek === 2) {
+        window.alert("Your Akan name is " + femaleAkan[1] + "!");
+      }
+      if (dayOfWeek === 3) {
+        window.alert("Your Akan name is " + femaleAkan[2] + "!");
+      }
+      if (dayOfWeek === 4) {
+        window.alert("Your Akan name is " + femaleAkan[3] + "!");
+      }
+      if (dayOfWeek === 5) {
+        window.alert("Your Akan name is " + femaleAkan[4] + "!");
+      }
+      if (dayOfWeek === 6) {
+        window.alert("Your Akan name is " + femaleAkan[5] + "!");
+      }
+      if (dayOfWeek === 7) {
+        window.alert("Your Akan name is " + femaleAkan[6] + "!");
+      }
+
+      break;
+
+  
+

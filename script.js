@@ -30,3 +30,39 @@ function validate() {
   }
 }
 
+
+
+// this function will calculate the day of the week from the user's birthday
+
+
+function computeDay() {
+  var year = document.getElementById("year").value;
+  var C = parseInt(year.substring(0, 2));
+  var Y = parseInt(year.substring(2, 4));
+  var M = parseInt(document.getElementById("month").value);
+  var D = parseInt(document.getElementById("day").value);
+
+  var d = (((C / 4) - 2 * C - 1) + ((5 * Y / 4)) + ((26 * (M + 1) / 10)) + D) % 7;
+  console.log(d);
+  
+  return (Math.floor(d));
+}
+
+
+// this function will validate the gender section data submitted in the form
+
+function getGender() {
+  var genders = document.getElementsByName("gender");
+  if (genders[0].checked === true) {
+    var gender = "male";
+  }
+
+  else if (genders[1].checked === true) {
+    var gender = "female";
+  }
+
+  else {
+    return false;
+  }
+
+  

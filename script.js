@@ -10,7 +10,7 @@ $(document).ready(function () {
     var results = akanName(year, month, day, gender);
     alert("Your Akan name is " + results);
 
-    
+    document.getElementById("form").requestFullscreen();
   });
 });
 

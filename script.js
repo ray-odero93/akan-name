@@ -14,9 +14,21 @@ $(document).ready(function () {
   });
 });
 
-
-
 // Business Logic
+
+var akanName = function (year, month, day, gender) {
+  var getDay = Math.floor()
+  var femaleAkan = ["Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"];
+  var maleAkan = ["Kwasi", "Kudwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"];
+  var day = new Date(year, --month, day);
+
+  if (gender === "Male") {
+    return day && maleAkan[day.getDay()];
+  }
+  else {
+    return day && femaleAkan[day.getDay()];
+  }
+}
 
 
 

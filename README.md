@@ -31,7 +31,7 @@ Collaborate on this project by forking this repository to your github, clone it 
 
 #### Contact
 ray.odero64@gmail.com
-Live Link: 
+Live Link: ray-odero93.github.io/akan-name/
 
 Copyright & License
 Distributed under the MIT License. See LICENSE for more information on license and copyright.

@@ -22,7 +22,11 @@ var akanName = function (year, month, day, gender) {
   var maleAkan = ["Kwasi", "Kudwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"];
   var day = new Date(year, --month, day);
 
-  
+  if (gender === "Male") {
+    return day && maleAkan[day.getDay()];
+  } else {
+    return day && femaleAkan[day.getDay()];
+  }
 };
 
 
